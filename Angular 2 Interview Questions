@@ -1,16 +1,21 @@
 Q1. Explain component decorators in Angular4.
-A decorator is the core concept when developing an angular framework with version 2 and above. It may become a core language feature for JavaScript soon. In angular 4, decorators are used extensively and are also used to compile a code. There are 4 different types of decorators:
+A decorator is the core concept when developing an angular framework with version 2 and above.
+It may become a core language feature for JavaScript soon. In angular 4, decorators are used extensively and are also used to
+compile a code. There are 4 different types of decorators:
 
 Class decorators
 Property decorators
 Method decorators
 Parameter decorators
-A decorator is a function that is invoked with a prefixed “@” symbol and is immediately followed by a class, parameter, method, or property. A decorator returns the same thing which was given as an input but in an augmented form.
+A decorator is a function that is invoked with a prefixed “@” symbol and is immediately followed by a class, 
+parameter, method, or property. A decorator returns the same thing which was given as an input but in an augmented form.
 
 Q2. Write the CLI command to generate a component in Angular4.
 Components are just simple classes which are declared as components with the help of component decorators.
 
-It becomes easy to create an application which already works, with the help of angular CLI commands. “Ng generate” is used to generate components, routes, services, and pipes. Simple test shells are also created with the help of this CLI command. For generating a component in angular4 with the help of CLI command, you need to follow the following syntax-
+It becomes easy to create an application which already works, with the help of angular CLI commands.
+“Ng generate” is used to generate components, routes, services, and pipes. Simple test shells are also created with the help of this CLI
+command. For generating a component in angular4 with the help of CLI command, you need to follow the following syntax-
 
 ng generate component component_name;
 It generates the component and adds the component to module declarations.
@@ -18,33 +23,37 @@ It generates the component and adds the component to module declarations.
  Q3. Explain the component directory structure of angular4.
 Here are the elements which are present in the component directory structure anf modules: –
 
-module.ts- in this, the angular module is declared. @NgModule decorator is used which initializes the different aspects of angular applications. AppComponent is also declared in it.
-components.ts- it simply defines the components in angular and this is the place where the app-root sector is also defined. A title attribute is also declared in the component.
+module.ts- in this, the angular module is declared. @NgModule decorator is used which initializes the different aspects of angular 
+applications. AppComponent is also declared in it.
+components.ts- it simply defines the components in angular and this is the place where the app-root sector is also defined.
+A title attribute is also declared in the component.
 component.html- it is the template file of the application which represents the visual parts of our components.
 Q4.  Explain ngFor directive with an example.
-The ngFor directive instantiates a template for every element of the given iterator. The different local variables of the ngFor directive can be used in iterations. The ngFor directive can even be used with the HTML elements. It also performs various changes in DOM. Several exported values can be aliased to local variables with the help of ngFor directive. It allows us to build data presentation lists and tables in our HTML templates. Here’s an example of ngFor directive with the help of HTML:
-
+The ngFor directive instantiates a template for every element of the given iterator. 
+The different local variables of the ngFor directive can be used in iterations.
+The ngFor directive can even be used with the HTML elements. It also performs various changes in DOM.Several exported values can be 
+aliased to local variables with the help of ngFor directive. It allows us to build data presentation lists and tables in our HTML 
+templates. Here’s an example of ngFor directive with the help of HTML:
 <tr *ngFor=”hero of heroes”>
-
 <td>({hero.name})</td></tr>
 
 Q5. Explain property binding or one way binding in angular js.
-Basically property binding means passing data from the component class and setting the value of a given element in the view. It is a one way binding in which the data is passed from component to the class. It allows us to control the element property values from component to class. Property binding in angular can take place by three ways:
+Basically property binding means passing data from the component class and setting the value of a given element in the view. It is a one
+way binding in which the data is passed from component to the class. It allows us to control the element property values from component 
+to class. Property binding in angular can take place by three ways:
 
 Interpolation can be used to define a value, as long as the value being defined is a string.
 Wrapping brackets around the element property and binding it to the component property is the most common type of property binding.
 The third way is by adding “bind” before the element property.
 Q6. Explain ngIf directive with an example.
-The ngIf is a built-in template directive which is used to add or remove some parts of DOM. This addition or removal depends on the expression being true or false.
+The ngIf is a built-in template directive which is used to add or remove some parts of DOM. This addition or removal depends on the 
+expression being true or false.
 
-If the expression is evaluated to false, then the ngIf directive removes the HTML element. If the expression is evaluated to be true, then the element gets added to the DOM.
-
+If the expression is evaluated to false, then the ngIf directive removes the HTML element. If the expression is evaluated to be true, 
+then the element gets added to the DOM.
 Syntax- *ngIf=”<condition>”
-
 Example- <ul *ngFor=”let person of people”
-
 *ngIf=”person.age < 30”>
-
 <li>{{person.name}}</li></ul>
 
 Q7. Write the difference between directive and component in angular js.
@@ -52,14 +61,26 @@ In angular js, there are differences between the meta-data annotations. Some of 
 
 A directive is used to add behavior to an existing element. Whereas, a component is used to create a component with attached behavior.
 “@directive” is used to create a directive. Whereas, “@component” is used to create a component.
-A directive is used to attach different behaviors to an existing DOM element. Whereas, with the help of component, we can break our application into smaller components.
+A directive is used to attach different behaviors to an existing DOM element. Whereas, with the help of component, we can break our 
+application into smaller components.
 A directive is used to create reusable behavior. Whereas, a component is used to create reusable components.
 A directive does not require a view. Whereas, a component needs a view via @view.
 Q8. What do you understand by Isolated Unit Tests?
-As the name implies, unit test is all about testing individual units of code. In order to answer some questions, isolating the unit of code under test is really important. When we do this, we are not forced into creating related pieces such as DOM elements for sorting. With the help of isolated unit tests, it becomes easier to implement everything. To simulate the requests, dependency injections are also provided. The individual sort function can be tested in isolation. And not only the sort function, any function can be tested in isolation.
+As the name implies, unit test is all about testing individual units of code. In order to answer some questions, isolating the unit of 
+code under test is really important. When we do this, we are not forced into creating related pieces such as DOM elements for sorting. 
+With the help of isolated unit tests, it becomes easier to implement everything. To simulate the requests, dependency injections are 
+also provided. The individual sort function can be tested in isolation. And not only the sort function, any function can be tested in 
+isolation.
 
 Q9. What is a routing in angular js?
-ngRoute module is used when you want to navigate through different pages of your application but you also want your application to be a single page application. This ngRoute module navigates through different pages of your application without reloading the entire application. The angular js route module should be included to make your application ready for routing. The ngRoute is added as a dependency in the application. The routing engine captures the specific url requested by the user and renders the view based on the defined routing rules.
+ngRoute module is used when you want to navigate through different pages of your application but you also want your application to be a 
+single page application. This ngRoute module navigates through different pages of your application without reloading the entire 
+application. The angular js route module should be included to make your application ready for routing. The ngRoute is added as a 
+dependency in the application. The routing engine captures the specific url requested by the user and renders the view based on the 
+defined routing rules.
 
 Q10. What do you understand by services with reference to angular js?
-Services in angular js are used to organize and share code across your application. These are the suitable objects which are wired together with the help of dependency injection. The angular js services are lazily instantiated. The service is only instantiated by angular js only when the application component depends on it. In angular js, new services can be made or can even be used in other built-in services. Over 30 built-in services are present in angular js.
+Services in angular js are used to organize and share code across your application. These are the suitable objects which are wired 
+together with the help of dependency injection. The angular js services are lazily instantiated. The service is only instantiated by 
+angular js only when the application component depends on it. In angular js, new services can be made or can even be used in other 
+built-in services. Over 30 built-in services are present in angular js.
