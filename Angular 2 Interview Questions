@@ -84,3 +84,15 @@ Services in angular js are used to organize and share code across your applicati
 together with the help of dependency injection. The angular js services are lazily instantiated. The service is only instantiated by 
 angular js only when the application component depends on it. In angular js, new services can be made or can even be used in other 
 built-in services. Over 30 built-in services are present in angular js.
+
+template driven vs reactive forms?
+
+angular 1 vs 4?
+ES6 features ?
+different b/w one way binding and two binding?
+How many kinds of data bindings?
+component vs modules vs services?
+what is ngrx?
+what's difference b/w call back vs promises?
+what's the differences b/w promises vs observables?
+what's difference b/w for off for in?
